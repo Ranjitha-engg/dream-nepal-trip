@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dream Nepal Trip Planner</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+header{
+    background:#0d47a1;
+    color:rgb(255, 255, 255);
+    padding:20px;
+    text-align:center;
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    color:rgb(4, 171, 236);
+    text-decoration:none;
+    margin:15px;
+    font-size:18px;
+}
+
+.hero{
+    background-image:url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1600');
+    background-size:cover;
+    background-position:center;
+    height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:rgb(40, 37, 36);
+}
+
+.hero h1{
+    font-size:55px;
+}
+
+.hero p{
+    font-size:24px;
+    margin-top:20px;
+}
+
+button{
+    margin-top:30px;
+    padding:15px 30px;
+    border:none;
+    border-radius:10px;
+    background:#ff9800;
+    color:rgb(118, 20, 20);
+    font-size:18px;
+    cursor:pointer;
+}
+
+section{
+    padding:60px 20px;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#0d47a1;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.card{
+    width:300px;
+    background:rgb(16, 205, 117);
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0px 0px 10px rgb(118, 24, 24);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h3{
+    text-align:center;
+    margin:15px;
+}
+
+.card p{
+    padding:15px;
+}
+
+#budget{
+    background:#f5f5f5;
+}
+
+table{
+    width:70%;
+    margin:auto;
+    border-collapse:collapse;
+    background:white;
+}
+
+table,th,td{
+    border:1px solid #ddd;
+}
+
+th{
+    background:#0d47a1;
+    color:white;
+}
+
+th,td{
+    padding:15px;
+    text-align:center;
+}
+
+.contact{
+    text-align:center;
+    background:white;
+}
+
+footer{
+    background:#0d47a1;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:35px;
+    }
+
+    table{
+        width:95%;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1> Dream Nepal Trip Planner</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#places">Places</a>
+        <a href="#budget">Budget</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <h1>Explore Nepal With Ranju & Chiru</h1>
+    <p>Your dream trip starts here! </p>
+    <button onclick="startTrip()">Start Planning</button>
+</section>
+
+<section id="places">
+    <h2>Beautiful Places In Nepal</h2>
+
+```
+<div class="cards">
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800">
+        <h3>Kathmandu</h3>
+        <p>The capital city filled with culture and temples.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800">
+        <h3>Pokhara</h3>
+        <p>Famous for lakes and mountain views.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800">
+        <h3>Himalayas</h3>
+        <p>Experience the majestic beauty of Nepal's mountains.</p>
+    </div>
+
+</div>
+```
+
+</section>
+
+<section id="budget">
+    <h2>Estimated Budget (Per Person)</h2>
+
+```
+<table>
+    <tr>
+        <th>Expense</th>
+        <th>Amount (₹)</th>
+    </tr>
+
+    <tr>
+        <td>Flight</td>
+        <td>20,000</td>
+    </tr>
+
+    <tr>
+        <td>Hotel</td>
+        <td>8,000</td>
+    </tr>
+
+    <tr>
+        <td>Food</td>
+        <td>5,000</td>
+    </tr>
+
+    <tr>
+        <td>Sightseeing</td>
+        <td>7,000</td>
+    </tr>
+
+    <tr>
+        <td><b>Total</b></td>
+        <td><b>40,000</b></td>
+    </tr>
+</table>
+```
+
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: dreamnepal@gmail.com</p>
+    <br>
+    <p>Phone: +91 9876543210</p>
+</section>
+
+<footer>
+    <p>© 2026 Dream Nepal Trip Planner | Made by Ranjitha ❤️</p>
+</footer>
+
+<script>
+function startTrip(){
+    alert(" Welcome to your Dream Nepal Trip Planner!");
+}
+</script>
+
+</body>
+</html>
