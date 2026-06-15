@@ -17,4 +17,4 @@ A responsive travel website built using HTML, CSS, and JavaScript.
 
 ## Author
 
-Ranjitha B
+Ranjitha and chirag
